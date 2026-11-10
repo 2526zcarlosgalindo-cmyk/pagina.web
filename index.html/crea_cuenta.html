@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <body>  
+        <head>
+            <link rel="stylesheet" href="..\ind\formulari.css">
+        </head>
+        
+    <form action="./enviat_creacuenta.html" method="get">
+        <h2>Bienvenido, sigue los siguientes pasos para que puedas crear tu cuenta</h2>    
+        
+        <label for="name">Nombres y apellidos:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="number">Edad:</label><br>
+        <input type="number" id="number" name="number" required><br>
+        
+        <h2>Que documentacion tienes?</h2>
+        
+        <input type="radio" id="dni" name="tipo" value="dni" checked>
+        <label for="DNI">DNI</label>
+       
+        <input type="radio" id="nie" name="tipo" value="nie">
+        <label for="NIE">NIE</label>
+       
+        <input type="radio" id="pas" name="tipo" value="pas">
+        <label for="PASAPORT">PASAPORTE</label><br><br>
+       
+        <label for="otro">otro?</label>
+        <select name="curso" id="curso">
+        <option value="" disabled selected hidden>
+        Selecciona una opción...
+        </option>
+        <option value="refugiado">Refugiado</option>
+        <option value="no">Prefiero no decirlo</option>
+        </select>
+        <h2>Que continentes te gustaria visitar</h2>
+        <input type="checkbox" id="am" name="am" value="am">
+        <label for="am">America</label><br>
+        
+        <input type="checkbox" id="as" name="as" value="as" checked>
+        <label for="as">Asia</label><br>
+        
+        <input type="checkbox" id="eu" name="eu" value="eu">
+        <label for="eu"> Europa</label><br>
+        
+        <h2>que paises te gustarian visitar? mencionalos</h2>
+
+        <textarea placeholder="escribe aqui que paises te agradan..." cols="50" rows="5"></textarea>
+        <input type="submit" value="Enviar" >
+        </fieldset>
+    </form>
+</html>
